@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Εφαρμογή</title>
+<link rel="stylesheet" type="text/css" href="testcss.css" />
+<script type="text/javascript" charset="UTF-8" src="testjs.js" ></script>
+</head>
+<body>
+										<div id="main">
+													<a href=""><div id="header" onclick="window.location.reload()">
+															<span id="myguide">Εφαρμογή</span>
+													</div>	
+													</a>
+														<div id="buses_select">	
+															<p>Επιλογή Λεωφορείου</p>	
+															<select name="buses" id="select1" onchange="change1(this)">
+																<option value="0" selected="selected">Παρακαλώ επιλέξτε γραμμή</option>
+																<option value="1">Λεωφορειο 1</option>
+	                                                    		<option value="2">Λεωφορειο 2</option>
+	                                                    		<option value="3">Λεωφορειο 3</option>
+	                                                    		<option value="4">Λεωφορειο 4</option>
+	                                                    		<option value="5">Λεωφορειο 5</option>
+	                                                    		<option value="6">Λεωφορειο 6</option>
+	                                                    		<option value="7">Λεωφορειο 7</option>
+	                                                    		<option value="7">Λεωφορειο 8</option>
+	                                                    		<option value="9">Λεωφορειο 9</option>
+	                                                    		<option value="10">Λεωφορειο 10</option>
+	                                                    		<option value="11">Λεωφορειο 11</option>
+	                                                    		<option value="12">Λεωφορειο 12</option>
+                                                         	</select>
+                                           			     </div>                           	
+                                           				<div id="direction_select">
+                                           					<p>Επιλογή Κατεύθυνσης</p>
+                                           					<select name="direction" id="select2" onchange="change2(this)"> 
+                                           						<option value="0" selected="selected">Παρακαλώ επιλέξτε κατεύθυνση</option>
+			                        							<option value="1">Προς Αφετηρία</option>
+			                        							<option value="2">Προς Τέρμα</option>	
+                                           					</select>
+                                           				</div>
+                                           				<div id="stop_select">
+                                           					<p>Επιλογή Στάσης</p>
+                                           					<select name="stop" id="select3" onchange="change3(this)"> 
+		                                           				<option value="0" selected="selected">Παρακαλώ επιλέξτε στάση</option>
+		                                           				<option value="1">Στάση 1</option>
+		                        								<option value="2">Στάση 2</option>
+		                        								<option value="3">Στάση 3</option>
+		                        								<option value="4">Στάση 4</option>
+		                        								<option value="5">Στάση 5</option>
+		                        								<option value="6">Στάση 6</option>
+		                        								<option value="7">Στάση 7</option>
+		                        								<option value="8">Στάση 8</option>
+		                        								<option value="9">Στάση 9</option>
+                                           					</select>
+                                           				</div> 
+                                           				<div id="go1">	
+                                           					<button id="button1" onclick="button(this)"><p>GO!</p></button>
+                                           				</div>   			                                           				
+										</div>
+										<div id="myModal" class="modal">
+  											<div class="modal-content">
+    											<span class="close">&times;</span>
+    												<p>Ο αριθμός επιβατών στη γραμμή που επιλέξατε είναι:</p>
+    												<p id="epivates"> some int</p><br/><br/><br/>
+    												<p> Κάντε κλικ στην Eφαρμογή για νέα αναζήτηση.</p>
+  											</div>
+										</div> 
+</body>
+</html>
